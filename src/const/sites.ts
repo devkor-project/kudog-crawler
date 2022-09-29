@@ -1,4 +1,7 @@
-export const sites = [
-  { url: "https://info.korea.ac.kr/info/board/notice_under.do", description: "korea univ college of info" }
-]
+import { siteInfo } from '@/interface/site';
 
+const sites: siteInfo[] = [
+  { host: 'https://info.korea.ac.kr', description: 'korea univ college of info', urls: ['/info/board/notice_under.do'] },
+];
+
+export default sites;

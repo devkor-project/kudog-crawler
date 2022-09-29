@@ -3,7 +3,7 @@
     "files": true
   },
   "compilerOptions": {
-    "module": "ESNext",
+    "module": "CommonJS",
     "esModuleInterop": true,
     "target": "es2017",
     "moduleResolution": "node",
@@ -23,6 +23,7 @@
     "resolveJsonModule": true
   },
   "include": [
-    "src/**/*"
+    "src/**/*.ts",
+    "src/*.ts"
   ]
 }
