@@ -12,7 +12,7 @@ const fetchRobots = async (host: url): Promise<string> => {
 
 const parseRobots = async (robots: string): Promise<parseTree[]> => {
   const agents = robots.split('User-agent: ');
-  const forAll = agents.find((agent) => agent[0] === '*');
+  const forAll = agents.find((agent) => agent.startsWith('*'));
   const lines = forAll.split('\n');
   const allows = [];
   const disallows = [];
@@ -30,7 +30,6 @@ const parseRobots = async (robots: string): Promise<parseTree[]> => {
   allows.forEach((allow) => {
     [ptr] = tree.next;
     // TODO:: make tree
-
   });
   // check if urls are allowed
   console.log(allows);
