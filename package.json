@@ -4,7 +4,9 @@
   "main": "src/index.js",
   "author": " ",
   "license": "MIT",
-  "type": "module",
+  "scripts": {
+    "start": "ts-node  -r tsconfig-paths/register ./src ./src/index.ts"
+  },
   "dependencies": {
     "axios": "^0.27.2"
   },
