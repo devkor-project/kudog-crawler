@@ -1,5 +1,6 @@
+export type url = string;
 export interface siteInfo {
-  host: string,
+  host: url,
   description: string,
-  urls: string[];
+  urls: url[];
 }
